@@ -23,8 +23,8 @@ props: ['caixinhas']
     flex-wrap: wrap;
 }
 .caixinhas{
- width: 60px;
- height: 60px;
+ width: 62px;
+ height: 62px;
  border: 1px solid #ffffff;
  margin: 5px 0 0 5px;
  text-align: center;
