@@ -1,25 +1,24 @@
 <template>
 <div id="caixa2">
-<div>
-
   <select v-model="caixaSel">
       <option value="" selected disabled>Selecione uma caixa</option> <!-- selecionado debilitado -->
       <option v-for="(caixa, index) in caixinhas" :key="index" :value="index">
           {{ caixa.titulo }}
     </option> <!-- seleciona a caixa pelo index -->
   </select> 
-  <div id="paleta">
-      <div class="cor" :style="cor" v-for="(cor, index) in cores" :key='index' @click="alteraCor(cor)">
 
-      </div>
-  </div>
+  <div id="paleta">
+      <div class="cor" :style="cor" v-for="(cor, index) in cores" :key='index' @click="alteraCor(cor)"></div>
+   <div id="texto">
+    
+</div>
+</div>
   <input type="text" placeholder="Digite o nome da caixa" v-model="titulo">
   <button @click="alterarTexto">OK</button>
 </div>
-</div>
 </template>
 
-div#
+
 <script>
 export default {
     name: "Ferramentas",
@@ -49,6 +48,7 @@ export default {
 </script>
 
 <style>
+
 #caixa2{
     border: 1px solid #ffffff;
     width: 350px;
@@ -57,6 +57,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
 }
+
 #paleta{
     width: 300px;
     height: 150px;
